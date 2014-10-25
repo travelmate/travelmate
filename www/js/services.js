@@ -1,21 +1,54 @@
+'use strict';
+
 angular.module('starter.services', [])
 
-.factory('HostService', function() {
+.factory('HostService', function () {
 
-  var hosts = [
-    { id: 0, title: 'Jake D.', description: 'Lives at the museum', rating: 3 },
-    { id: 1, title: 'Howard M.', description: 'Music festival goer.', rating: 5 },
-    { id: 2, title: 'Kay M.', description: 'Bar hopping enthusiast.', rating: 2 },
-    { id: 3, title: 'Christina L.', description: 'Keep Austin weird', rating: 4 }
-  ];
+    var hosts = [{
+        id: 0,
+        name: 'Jake D.',
+        bio: 'Lives at the museum',
+        expertise: ['coffee shops',
+            'modernist bars',
+            'urban jungles'
+        ],
+        rating: 3
+    }, {
+        id: 1,
+        name: 'Howard M.',
+        bio: 'Music festival goer.',
+        expertise: ['coffee shops',
+            'modernist bars',
+            'urban jungles'
+        ],
+        rating: 5
+    }, {
+        id: 2,
+        name: 'Kay M.',
+        bio: 'Bar hopping enthusiast.',
+        expertise: ['coffee shops',
+            'modernist bars',
+            'urban jungles'
+        ],
+        rating: 2
+    }, {
+        id: 3,
+        name: 'Christina L.',
+        bio: 'Keep Austin weird',
+        expertise: ['coffee shops',
+            'modernist bars',
+            'urban jungles'
+        ],
+        rating: 4
+    }];
 
-  return {
-    all: function() {
-      return hosts;
-    },
-    get: function(hostId) {
+    return {
+        all: function () {
+            return hosts;
+        },
+        get: function (hostId) {
 
-      return hosts[hostId];
-    }
-  }
+            return hosts[hostId];
+        }
+    };
 });
