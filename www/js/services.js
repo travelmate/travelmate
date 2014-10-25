@@ -1,8 +1,8 @@
 angular.module('starter.services', [])
 
-.factory('PetService', function() {
+.factory('HostService', function() {
 
-  var pets = [
+  var hosts = [
     { id: 0, title: 'Jake D.', description: 'Lives at the museum', rating: 3 },
     { id: 1, title: 'Howard M.', description: 'Music festival goer.', rating: 5 },
     { id: 2, title: 'Kay M.', description: 'Bar hopping enthusiast.', rating: 2 },
@@ -11,11 +11,11 @@ angular.module('starter.services', [])
 
   return {
     all: function() {
-      return pets;
+      return hosts;
     },
-    get: function(petId) {
+    get: function(hostId) {
 
-      return pets[petId];
+      return hosts[hostId];
     }
   }
 });

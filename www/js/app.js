@@ -21,23 +21,23 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
       templateUrl: 'templates/tabs.html'
     })
 
-    // the pet tab has its own child nav-view and history
-    .state('tab.pet-index', {
+    // the host tab has its own child nav-view and history
+    .state('tab.host-index', {
       url: '/hosts',
       views: {
-        'pets-tab': {
-          templateUrl: 'templates/pet-index.html',
-          controller: 'PetIndexCtrl'
+        'hosts-tab': {
+          templateUrl: 'templates/host-index.html',
+          controller: 'HostIndexCtrl'
         }
       }
     })
 
-    .state('tab.pet-detail', {
-      url: '/pet/:petId',
+    .state('tab.host-detail', {
+      url: '/host/:hostId',
       views: {
-        'pets-tab': {
-          templateUrl: 'templates/pet-detail.html',
-          controller: 'PetDetailCtrl'
+        'hosts-tab': {
+          templateUrl: 'templates/host-detail.html',
+          controller: 'HostDetailCtrl'
         }
       }
     })
