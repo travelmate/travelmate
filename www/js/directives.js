@@ -1,8 +1,8 @@
 'use strict';
 
-var myApp = angular.module('starter', []);
+angular.module('starter')
 
-myApp.directive('googleplace', function () {
+.directive('googleplace', function () {
     return {
         require: 'ngModel',
         link: function (scope, element, attrs, model) {
