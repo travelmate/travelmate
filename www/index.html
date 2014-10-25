@@ -15,17 +15,26 @@
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+
     <!-- your app's js -->
     <script src="js/app.js"></script>
+    <script src="js/directives.js"></script>
   </head>
   <body ng-app="starter">
 
     <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
-      </ion-header-bar>
       <ion-content>
+        <div class="scroll" style="-webkit-transform: translate3d(0px, 0px, 0px);">
+          <div class="list list-inset">
+            <label class="item item-input">
+              <input type="text" placeholder="City" ng-model="user.address" googleplace="" class="ng-pristine ng-valid" autocomplete="off"><!-- googleplace -->
+            </label>
+          </div>
+        </div>
       </ion-content>
     </ion-pane>
+
+
   </body>
 </html>
