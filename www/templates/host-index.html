@@ -6,7 +6,9 @@
       <div class="host-box">
         <h3 class="host-header">{{host.name}}</h3>
         <div class="host-bio"> - {{host.bio}}</div>
-        <div class="host-rating"></div>
+        <div class="host-rating">
+          <stars rating="{{host.rating}}">
+        </div>
         <div class="host-terms">
           <button class="button button-small button-outline button-positive">{{host.expertise[0]}}</button>
           <button class="button button-small button-outline button-positive">{{host.expertise[1]}}</button>

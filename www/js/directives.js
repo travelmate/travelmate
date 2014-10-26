@@ -18,4 +18,29 @@ angular.module('starter')
             });
         }
     };
+})
+
+.directive('stars', function () {
+    return {
+        restrict: 'E',
+        scope: {
+            rating: '@rating'
+        },
+        template: '<div class="stars"></div>',
+        link: function (scope, element, attrs, model) {
+            var rating = parseFloat(scope.rating, 10);
+
+            for (var i = 0; i < Math.floor(rating); i++) {
+                var star = document.createElement('i');
+                star.className = 'ion-ios7-star';
+                element[0].appendChild(star);
+            }
+
+            if (rating - Math.floor(rating) > 0) {
+                var star = document.createElement('i');
+                star.className = 'ion-ios7-star-half';
+                element[0].appendChild(star);
+            }
+        }
+    };
 });

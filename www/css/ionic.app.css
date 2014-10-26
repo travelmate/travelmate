@@ -24,6 +24,8 @@ body .host-box {
     display: inline; }
   body .host-box .host-bio {
     display: inline; }
+  body .host-box .host-rating {
+    float: right; }
   body .host-box .host-terms {
     padding: 20px 10px 10px 5px; }
 

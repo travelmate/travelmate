@@ -4,8 +4,7 @@ angular.module('starter.services', [])
 
 .factory('HostService', function () {
 
-    var hosts = [
-      {
+    var hosts = [{
         id: 0,
         name: 'Jake D.',
         bio: 'Lives at the museum',
@@ -13,9 +12,8 @@ angular.module('starter.services', [])
             'art',
             'urban jungles'
         ],
-        rating: 3
-      }, 
-      {
+        rating: 3.5
+    }, {
         id: 1,
         name: 'Howard M.',
         bio: 'Music festival goer.',
@@ -24,8 +22,7 @@ angular.module('starter.services', [])
             'museums'
         ],
         rating: 5
-      },
-      {
+    }, {
         id: 2,
         name: 'Kay M.',
         bio: 'Bar hopping enthusiast.',
@@ -34,8 +31,7 @@ angular.module('starter.services', [])
             'urban jungles'
         ],
         rating: 2
-      },
-      {
+    }, {
         id: 3,
         name: 'Christina L.',
         bio: 'Keep Austin weird',
@@ -44,8 +40,7 @@ angular.module('starter.services', [])
             'meditation'
         ],
         rating: 4
-      }
-    ];
+    }];
 
     return {
         all: function () {
