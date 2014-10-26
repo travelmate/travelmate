@@ -1,19 +1,14 @@
-<!--
-  This template loads for the 'tab.pet-detail' state (app.js)
-  'pet' is a $scope variable created in the PetCtrl controller (controllers.js)
-  The PetCtrl pulls data from the Pets service (service.js)
-  The Pets service returns an array of pet data
--->
 <ion-view title="{{host.title}}">
   <ion-content padding="true">
   	<div class="detail-image">
-  		<img src="{{ host.image }}">
+  		<div class="img-wrapper"><img src="{{ host.image }}"></div>
   	</div>
   	<div class="detail-info">
   		<p class="detail-name">{{ host.name }}</p>
+  		<stars rating="{{ host.rating }}"></stars>
     	<p>{{ host.bio }}</p>
     </div>
     <p><a style="float:left" class="button button-medium icon ion-arrow-left-b" href="#/tab/hosts"> All Hosts</a></p>
-    <p><a style="float:right"class="button button-medium icon button-balanced" href="#/tab/message">Message</a></p>
+    <p><a style="float:right"class="button button-medium icon button-balanced" ui-sref="tab.message">Message</a></p>
   </ion-content>
 </ion-view>

@@ -1,5 +1,12 @@
 angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
 
+.run(function($ionicPlatform) {
+    $ionicPlatform.ready(function() {    
+        if(window.cordova){
+            cordova.plugins && cordova.plugins.Keyboard && cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+        }        
+    });
+})
 
 .config(function($stateProvider, $urlRouterProvider) {
 
@@ -16,6 +23,16 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
       url: '/tab',
       abstract: true,
       templateUrl: 'templates/tabs.html'
+    })
+
+    .state('tab.message', {
+      url: '/message',
+      views: {
+        'hosts-tab': {
+          templateUrl: 'templates/message.html',
+          controller: 'Messages'
+        }
+      }
     })
 
     // the host tab has its own child nav-view and history
