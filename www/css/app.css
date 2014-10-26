@@ -1,8 +1,31 @@
 /* Your app's CSS, go crazy, make it your own */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; }
 
 .ionic-logo {
   display: block;
   margin: 15px auto;
   width: 96px;
   height: 96px;
+}
+.header {
+	background-color: #fb9;
+	height: 50px;
+	text-align: center;
+}
+.header span {
+	color: white;
+	font-size: 22px;
+	line-height: 50px;
+}
+.single-button {
+	text-align: center;
 }

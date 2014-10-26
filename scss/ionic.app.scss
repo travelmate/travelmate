@@ -15,10 +15,14 @@ $royal:                           #8a6de9 !default;
 $dark:                            #444 !default;
 */
 body {
+  .home-input {
+    text-transform: capitalize;
+    text-align: center;
+  }
+
   .host-location {
     font-size: 30px;
     padding: 30px 30px 30px 30px;
-
   }
 
   .host-box {
@@ -39,7 +43,6 @@ body {
 
     .host-terms {
       padding: 20px 10px 10px 5px;
-
     }
   }
 }

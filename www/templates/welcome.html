@@ -1,31 +1,12 @@
-<ion-view title="Welcome">
+<ion-view title="Glimpse">
   <ion-content>
-<div class="scroll" style="-webkit-transform: translate3d(0px, 0px, 0px);">
-  <div class="list list-inset">
-    <label class="item item-input">
-      <input type="text" placeholder="City" ng-model="user.address" googleplace="" class="home-input ng-pristine ng-valid" autocomplete="off"><!-- googleplace -->
-    </label>
-  </div>
-</div>
-
-<div class="list list-inset"> 
-  <label class="item item-input">
-    <span class="input-label">Date</span>
-    <input type="date" name="availableDate">
-  </label>
-</div>
-
-<div class="list list-inset">
-  <label class="item item-input">
-    <span class="input-label">Available from:</span>
-    <input type="time" name="fromTime">
-  </label>
-  <label class="item item-input">
-    <span class="input-label">to:</span>
-    <input type="time" name="toTime">
-  </label>
-</div>
-
-<div class="list list-inset"><a class="button button-large" ui-sref="tab.host-index">Next</a></div>
+    <div class="scroll" style="-webkit-transform: translate3d(0px, 0px, 0px);">
+      <div class="list list-inset">
+        <label class="item item-input">
+          <input type="text" placeholder="City" ng-model="user.address" googleplace="" class="home-input ng-pristine ng-valid" autocomplete="off"><!-- googleplace -->
+        </label>
+      </div>
+    </div>
+    <div class="single-button list list-inset"><a class="button button-large" ui-sref="tab.host-index" ng-click="setCity(user.address)">Search></a></div>
   </ion-content>
 </ion-view>
