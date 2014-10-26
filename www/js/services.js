@@ -10,7 +10,7 @@ angular.module('starter.services', [])
         price: 20,
         time: 5,
         name: 'Jake Davis',
-        description: 'Can name 63 types of dark beer',
+        description: 'brews beer',
         cover: './img/cover/Bars.jpg',
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.',
         image: './img/Jake.jpg',
@@ -18,7 +18,8 @@ angular.module('starter.services', [])
             'art',
             'urban jungles'
         ],
-        rating: 3
+        rating: 3,
+        numReviews: 7
       }, 
       {
         id: 1,
@@ -33,14 +34,15 @@ angular.module('starter.services', [])
             'modernist bars',
             'museums'
         ],
-        rating: 5
+        rating: 5,
+        numReviews: 8
       },
       {
         id: 2,
         price: 100,
         time: 2,
         name: 'Kay McKinney',
-        description: 'Street graffiti artist',
+        description: 'nighttime graffiti',
         cover: './img/cover/Graffiti.jpg',
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.',
         image: './img/Kay.jpg',
@@ -48,7 +50,8 @@ angular.module('starter.services', [])
             'modernist bars',
             'urban jungles'
         ],
-        rating: 2
+        rating: 2,
+        numReviews: 13
       },
       {
         id: 3,
@@ -62,7 +65,8 @@ angular.module('starter.services', [])
             'biking',
             'meditation'
         ],
-        rating: 4
+        rating: 4,
+        numReviews: 3
       }
     ];
 
