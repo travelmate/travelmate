@@ -21,6 +21,8 @@ body {
     height: 100%; }
   body .main-content {
     height: 150%; }
+  body .item-content {
+    background-color: #DCDCD3 !important; }
   body .home-input {
     text-transform: capitalize;
     text-align: center; }
