@@ -37,9 +37,14 @@
 	font-size: 28px;
 }
 .detail-image img {
-	max-height: 200px;
-	width: auto !important;
-	margin: 22px;
+	width: 200px !important;
+}
+.img-wrapper {
+	border-radius: 200px;
+	overflow: hidden;
+	height: 200px;
+	display: inline-block;
+	margin-bottom: 22px;
 }
 .text-message {
 	width: 100%;
