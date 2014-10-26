@@ -14,6 +14,19 @@ $assertive:                       #ef4e3a !default;
 $royal:                           #8a6de9 !default;
 $dark:                            #444 !default;
 */
+body .host-location {
+  font-size: 30px;
+  padding: 30px 30px 30px 30px; }
+body .host-box {
+  padding: 10px 10px 10px 10px;
+  display: inline; }
+  body .host-box .host-header {
+    display: inline; }
+  body .host-box .host-bio {
+    display: inline; }
+  body .host-box .host-terms {
+    padding: 20px 10px 10px 5px; }
+
 /*!
   Ionicons, v1.5.2
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/

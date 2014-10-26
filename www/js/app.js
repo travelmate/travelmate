@@ -42,11 +42,11 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
       }
     })
 
-    .state('tab.adopt', {
-      url: '/adopt',
+    .state('tab.find', {
+      url: '/find',
       views: {
-        'adopt-tab': {
-          templateUrl: 'templates/adopt.html'
+        'find-tab': {
+          templateUrl: 'templates/find.html'
         }
       }
     })

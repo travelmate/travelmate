@@ -1,19 +1,19 @@
-<!-- 
-  This template gets placed in the Pet tab's <ion-nav-view> directive.
-  It was wired up in the app config (app.js) 
-  The 'pets' data comes from its $scope within PetIndexCtrl (controller.js)
--->
 <ion-view title="Host Information">
   <ion-content>
-
+  <div class="host-location">Austin</div>
     <ion-list>
-
-      <ion-item ng-repeat="host in hosts" type="item-text-wrap" href="#/tab/host/{{host.id}}">
-        <h3>{{host.title}}</h3>
-        <p>{{host.description}}</p>
+      <ion-item ng-repeat="host in hosts" href="#/tab/host/{{host.id}}">
+      <div class="host-box">
+        <h3 class="host-header">{{host.name}}</h3>
+        <div class="host-bio"> - {{host.bio}}</div>
+        <div class="host-rating"></div>
+        <div class="host-terms">
+          <button class="button button-small button-outline button-positive">{{host.expertise[0]}}</button>
+          <button class="button button-small button-outline button-positive">{{host.expertise[1]}}</button>
+          <button class="button button-small button-outline button-positive">{{host.expertise[2]}}</button>
+        </div>
+      </div>
       </ion-item>
-      
     </ion-list>
-
   </ion-content>
 </ion-view>
