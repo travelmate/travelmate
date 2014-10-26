@@ -10,10 +10,11 @@ angular.module('starter.services', [])
         price: 20,
         time: 5,
         name: 'Jake Davis',
-        description: 'brews beer',
-        cover: './img/cover/Bars.jpg',
+        description: 'Urban Surfer',
+        //cover: './img/cover/Bars.jpg',
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.',
         image: './img/Jake.jpg',
+        cover: './img/surfer.jpg',
         expertise: ['music',
             'art',
             'urban jungles'
@@ -26,10 +27,11 @@ angular.module('starter.services', [])
         price: 50,
         time: 1,
         name: 'Howard Markis',
-        description: 'Urban surfer',
-        cover: './img/cover/Surfing.jpeg',
+        description: 'Brews Beer',
+        //cover: './img/cover/Surfing.jpeg',
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.',
         image: './img/Howard.jpg',
+        cover: './img/car.jpg',
         expertise: ['coffee shops',
             'modernist bars',
             'museums'
@@ -43,30 +45,16 @@ angular.module('starter.services', [])
         time: 2,
         name: 'Kay McKinney',
         description: 'nighttime graffiti',
-        cover: './img/cover/Graffiti.jpg',
+        //cover: './img/cover/Graffiti.jpg',
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.',
         image: './img/Kay.jpg',
+        cover: './img/art.jpg',
         expertise: ['pub crawls',
             'modernist bars',
             'urban jungles'
         ],
         rating: 2,
         numReviews: 13
-      },
-      {
-        id: 3,
-        price: 255,
-        time: 2,
-        name: 'Christina Lora',
-        description: 'Keep Austin weird',
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.',
-        image: './img/Christina.jpg',
-        expertise: ['outdoors',
-            'biking',
-            'meditation'
-        ],
-        rating: 4,
-        numReviews: 3
       }
     ];
 

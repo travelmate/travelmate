@@ -1,12 +1,14 @@
 <ion-view title="{{host.title}}">
   <ion-content padding="true">
+  	<div class="host-box img-cover"><img class="host-cover" src="{{ host.cover }}"></div>
   	<div class="detail-image">
   		<div class="img-wrapper"><img src="{{ host.image }}"></div>
   	</div>
   	<div class="detail-info">
+  		<p class="small-text">About your enthusiast</p>
   		<p class="detail-name">{{ host.name }}</p>
-  		<stars rating="{{ host.rating }}"></stars>
-    	<p>{{ host.bio }}</p>
+  		<hr>
+    	<p class="detail-bio">{{ host.bio }}</p>
     </div>
     <p><a style="float:left" class="button button-medium icon ion-arrow-left-b" href="#/tab/hosts"> All Hosts</a></p>
     <p><a style="float:right"class="button button-medium icon button-balanced" ui-sref="tab.message">Message</a></p>
