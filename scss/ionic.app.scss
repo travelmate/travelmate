@@ -14,9 +14,17 @@ $assertive:                       #ef4e3a !default;
 $royal:                           #8a6de9 !default;
 $dark:                            #444 !default;
 */
+$positive: #DCDCD3 !default;
+
 body {
   height: auto;
   width: auto;
+
+  .title {
+    img {
+      height: 100%;
+    }
+  }
 
   .main-content {
     height: 150%;
@@ -119,15 +127,13 @@ body {
   }
 }
 
-messaging-view {
-
+messaging-view { 
   .scroll {
     min-height: 100%;
     padding: 10px 0 50px;
   }
 
-  .message {
-
+  .message { 
     padding: 0 10px 10px;
 
     .photo {
@@ -147,15 +153,13 @@ messaging-view {
       padding: 5px 5px 0;
       text-align: left;
 
-
       span {
         background: #fff;
         padding: 10px;
         display: inline-block;
         border-radius: 10px;
         text-align: left;
-      }
-
+      } 
     }
 
     &.other {
