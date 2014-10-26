@@ -9,7 +9,6 @@ angular.module('starter.controllers', [])
 
 // A simple controller that fetches a list of data from a service
 .controller('HostIndexCtrl', function($scope, $rootScope, HostService) {
-  $scope.city = $rootScope.city;
   $scope.hosts = HostService.all();
 })
 

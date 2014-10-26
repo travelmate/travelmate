@@ -15,6 +15,13 @@ $royal:                           #8a6de9 !default;
 $dark:                            #444 !default;
 */
 body {
+  height: auto;
+  width: auto;
+
+  .main-content {
+    height: 150%;
+  } 
+
   .home-input {
     text-transform: capitalize;
     text-align: center;
@@ -22,47 +29,52 @@ body {
 
   .host-list {
     height: 100%;
-  }
 
-  .host-item {
-    height: 30%;
-  }
+    .host-box {
+      height: 180px;
+      margin-left: -20px;
+      margin-top: -15px;
+      margin-right: -50px;
 
-  .host-location {
-    font-size: 30px;
-    padding: 30px 30px 30px 30px;
-  }
+      .host-cover {
+        z-index: -1;
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        height: 80%;
+      }
 
-  .host-box {
-    padding: 10px 10px 10px 10px;
-    display: inline;
+      .host-info {
+        height: 20%;
 
-    .host-cover {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
+        .host-price {
+          left: 0;
+          height: 30%;
+          width: 30%;
+          top: 20%;
+          padding: 10px 5px 5px 20px;
+          opacity: 0.8;
+          background: #000000;
+          color: #FFFFFF;
+          position: absolute;
+        }
 
-    .host-price {
-      opacity: 50%;
-      background: grey;
-      position: absolute;
-    }
+        .host-header {
+          display: inline;
+        }
 
-    .host-header {
-      display: inline;
-    }
+        .host-bio {
+          display: inline;
+        } 
+        
+        .host-rating {
+          display: inline-block; 
+        }
 
-    .host-bio {
-      display: inline;
-    } 
-    
-    .host-rating {
-      float: right;
-    }
-
-    .host-terms {
-      padding: 20px 10px 10px 5px;
+        .host-terms {
+          padding: 20px 10px 10px 5px;
+        }
+      }
     }
   }
 }
