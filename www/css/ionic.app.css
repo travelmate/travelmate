@@ -17,12 +17,24 @@ $dark:                            #444 !default;
 body .home-input {
   text-transform: capitalize;
   text-align: center; }
+body .host-list {
+  height: 100%; }
+body .host-item {
+  height: 30%; }
 body .host-location {
   font-size: 30px;
   padding: 30px 30px 30px 30px; }
 body .host-box {
   padding: 10px 10px 10px 10px;
   display: inline; }
+  body .host-box .host-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  body .host-box .host-price {
+    opacity: 50%;
+    background: grey;
+    position: absolute; }
   body .host-box .host-header {
     display: inline; }
   body .host-box .host-bio {

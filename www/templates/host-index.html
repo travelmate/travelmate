@@ -1,19 +1,15 @@
-<ion-view title="Host Information">
+<ion-view title="Glimpse">
   <ion-content>
   <div class="host-location">{{city}}</div>
-    <ion-list>
-      <ion-item ng-repeat="host in hosts" href="#/tab/host/{{host.id}}">
+    <ion-list class="host-list">
+      <ion-item class="host-item" ng-repeat="host in hosts" href="#/tab/host/{{host.id}}">
       <div class="host-box">
+        <img class="host-cover" src="{{host.cover}}"></img>
+        <div class="host-price">${{host.price}}</div>
         <h3 class="host-header">{{host.name}}</h3>
         <div class="host-bio"> - {{host.description}}</div>
         <div class="host-rating">
           <stars rating="{{host.rating}}">
-        </div>
-
-        <div class="host-terms">
-          <button class="button button-small button-outline button-positive">{{ host.expertise[0] }}</button>
-          <button class="button button-small button-outline button-positive">{{ host.expertise[1] }}</button>
-          <button class="button button-small button-outline button-positive">{{ host.expertise[2] }}</button>
         </div>
       </div>
       </ion-item>

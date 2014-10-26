@@ -20,6 +20,14 @@ body {
     text-align: center;
   }
 
+  .host-list {
+    height: 100%;
+  }
+
+  .host-item {
+    height: 30%;
+  }
+
   .host-location {
     font-size: 30px;
     padding: 30px 30px 30px 30px;
@@ -28,6 +36,18 @@ body {
   .host-box {
     padding: 10px 10px 10px 10px;
     display: inline;
+
+    .host-cover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .host-price {
+      opacity: 50%;
+      background: grey;
+      position: absolute;
+    }
 
     .host-header {
       display: inline;
@@ -38,7 +58,7 @@ body {
     } 
     
     .host-rating {
-        float: right;
+      float: right;
     }
 
     .host-terms {
