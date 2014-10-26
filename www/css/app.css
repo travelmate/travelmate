@@ -29,3 +29,15 @@
 .single-button {
 	text-align: center;
 }
+.detail-info,
+.detail-image {
+	text-align: center;
+}
+.detail-name {
+	font-size: 28px;
+}
+.detail-image img {
+	max-height: 200px;
+	width: auto !important;
+	margin: 22px;
+}

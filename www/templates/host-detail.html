@@ -6,7 +6,14 @@
 -->
 <ion-view title="{{host.title}}">
   <ion-content padding="true">
-    <p>{{ host.description }}</p>
-    <p><a class="button button-small icon ion-arrow-left-b" href="#/tab/hosts"> All Hosts</a></p>
+  	<div class="detail-image">
+  		<img src="{{ host.image }}">
+  	</div>
+  	<div class="detail-info">
+  		<p class="detail-name">{{ host.name }}</p>
+    	<p>{{ host.bio }}</p>
+    </div>
+    <p><a style="float:left" class="button button-medium icon ion-arrow-left-b" href="#/tab/hosts"> All Hosts</a></p>
+    <p><a style="float:right"class="button button-medium icon button-balanced" href="#/tab/message">Message</a></p>
   </ion-content>
 </ion-view>

@@ -4,13 +4,13 @@
     <ion-list>
       <ion-item ng-repeat="host in hosts" href="#/tab/host/{{host.id}}">
       <div class="host-box">
-        <h3 class="host-header">{{host.name}}</h3>
-        <div class="host-bio"> - {{host.bio}}</div>
+        <h3 class="host-header">{{ host.name }}</h3>
+        <div class="host-bio"> - {{ host.description }}</div>
         <div class="host-rating"></div>
         <div class="host-terms">
-          <button class="button button-small button-outline button-positive">{{host.expertise[0]}}</button>
-          <button class="button button-small button-outline button-positive">{{host.expertise[1]}}</button>
-          <button class="button button-small button-outline button-positive">{{host.expertise[2]}}</button>
+          <button class="button button-small button-outline button-positive">{{ host.expertise[0] }}</button>
+          <button class="button button-small button-outline button-positive">{{ host.expertise[1] }}</button>
+          <button class="button button-small button-outline button-positive">{{ host.expertise[2] }}</button>
         </div>
       </div>
       </ion-item>
