@@ -3,10 +3,10 @@
     <div class="scroll" style="-webkit-transform: translate3d(0px, 0px, 0px);">
       <div class="list list-inset">
         <label class="item item-input">
-          <input style="text-align:center"type="text" placeholder="City" ng-model="user.address" googleplace="" class="home-input ng-pristine ng-valid" autocomplete="off"><!-- googleplace -->
+          <input type="text" placeholder="City" ng-model="user.address" googleplace="" class="home-input ng-pristine ng-valid" autocomplete="off"><!-- googleplace -->
         </label>
       </div>
     </div>
-    <div class="single-button list list-inset"><a class="button button-large" ui-sref="tab.host-index">Search ></a></div>
+    <div class="single-button list list-inset"><a class="button button-large" ui-sref="tab.host-index" ng-click="setCity(user.address)">Search></a></div>
   </ion-content>
 </ion-view>
