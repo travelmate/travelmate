@@ -50,25 +50,43 @@ body {
           background: #000000;
           color: #FFFFFF;
           position: absolute; }
-        body .host-list .host-box .host-info .host-num-reviews {
-          border-right: 1px grey;
-          border-style: solid;
-          display: inline-block;
-          padding-right: 5px; }
-        body .host-list .host-box .host-info .host-header {
-          float: right; }
         body .host-list .host-box .host-info .host-bio {
+          padding-top: 10px;
           font-size: 20px;
           font-weight: 500;
-          display: block;
+          display: inline-block;
           text-transform: capitalize; }
-        body .host-list .host-box .host-info .host-rating {
-          border-right: 1px grey;
-          border-style: solid;
-          padding-right: 5px;
-          display: inline-block; }
-        body .host-list .host-box .host-info .host-time {
-          display: inline-block; }
+        body .host-list .host-box .host-info .host-pic {
+          position: absolute;
+          bottom: 20%;
+          right: 15%;
+          height: 100px;
+          width: 100px;
+          border-radius: 50px;
+          border: 2px solid white;
+          overflow: hidden;
+          display: inline-block;
+          float: right; }
+          body .host-list .host-box .host-info .host-pic img {
+            height: 100%;
+            width: 100%; }
+        body .host-list .host-box .host-info .host-details {
+          display: block; }
+          body .host-list .host-box .host-info .host-details .host-num-reviews {
+            border-right: 1px grey;
+            border-style: solid;
+            display: inline-block;
+            padding-right: 5px; }
+          body .host-list .host-box .host-info .host-details .host-rating {
+            border-right: 1px grey;
+            border-style: solid;
+            padding-right: 5px;
+            display: inline-block; }
+          body .host-list .host-box .host-info .host-details .host-time {
+            display: inline-block; }
+          body .host-list .host-box .host-info .host-details .host-header {
+            float: right;
+            padding-right: 20px; }
 
 messaging-view .scroll {
   min-height: 100%;

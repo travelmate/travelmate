@@ -60,35 +60,59 @@ body {
           background: #000000;
           color: #FFFFFF;
           position: absolute;
-        }
-
-        .host-num-reviews {
-          border-right: 1px grey;
-          border-style: solid;
-          display: inline-block;
-          padding-right: 5px;
-        }
-
-        .host-header {
-          float: right;
-        }
+        } 
 
         .host-bio {
+          padding-top: 10px;
           font-size: 20px;
           font-weight: 500;
-          display: block;
+          display: inline-block;
           text-transform: capitalize;
         } 
-        
-        .host-rating {
-          border-right: 1px grey;
-          border-style: solid;
-          padding-right: 5px;
-          display: inline-block; 
+
+        .host-pic {
+          position: absolute;
+          bottom: 20%;
+          right: 15%;
+          height: 100px;
+          width: 100px;
+          border-radius: 50px;
+          border: 2px solid white;
+          overflow: hidden;
+          display: inline-block;
+          float: right;
+
+          img {
+            height: 100%;
+            width: 100%;
+          }
         }
 
-        .host-time {
-          display: inline-block;
+        .host-details {
+          display: block;
+
+          .host-num-reviews {
+            border-right: 1px grey;
+            border-style: solid;
+            display: inline-block;
+            padding-right: 5px;
+          }
+          
+          .host-rating {
+            border-right: 1px grey;
+            border-style: solid;
+            padding-right: 5px;
+            display: inline-block; 
+          }
+
+          .host-time {
+            display: inline-block;
+          }
+
+          .host-header {
+            float: right;
+            padding-right: 20px;
+          }
         }
       }
     }
